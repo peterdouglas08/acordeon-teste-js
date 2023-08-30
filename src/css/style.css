@@ -1,0 +1,92 @@
+html{
+    background-color: #e5e5e5;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.acordeon{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 655px;
+    height: 347px;
+    border-radius: 21px;
+    background-color: #fcfcfc;
+    box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.25);
+}
+
+.acordeon .ilustracao{
+    position: absolute;
+    left: -90px;
+}
+
+.acordeon .conteudo{
+    width: 90%;
+    padding-left: 225px;
+}
+
+.acordeon .conteudo .titulo{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.acordeon .items{
+    list-style-type: none;
+}
+
+.acordeon .items .item{
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 15px;
+}
+
+.acordeon .items .item:last-child{
+    border: none;
+}
+
+.acordeon .items .item .pergunta{
+    font-size: 17px;
+    font-weight: 500;
+    margin: 10px 0 10px;
+    list-style: none;
+}
+
+.acordeon .items .item .pergunta:hover{
+    cursor: pointer;
+    background-color: #ddd;
+}
+
+.acordeon .items .item .pergunta .fa-caret-down{
+    position: absolute;
+    color: #bbb;
+    font-size: 23px;
+    right: 10%;
+}
+
+.acordeon .items .item .resposta{
+    font-size: 15px;
+    font-weight: 300;
+    margin-right: 50px;
+    padding-bottom: 15px;
+    display: none;
+}
+
+
+/* Javascript */
+
+.acordeon .items .item.ativo .pergunta{
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.acordeon .items .item.ativo .resposta{
+    display: block;
+}
+
+.acordeon .items .item.ativo .fa-caret-down{
+    color: #f47c57;
+}
